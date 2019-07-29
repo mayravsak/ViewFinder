@@ -1,5 +1,5 @@
 //
-//  PhotoTableViewController.swift
+//  PhotoDetailViewController.swift
 //  View Finder
 //
 //  Created by Apple on 7/29/19.
@@ -8,12 +8,13 @@
 
 import UIKit
 
-class PhotoTableViewController: UITableViewController {
+class PhotoDetailViewController: UITableViewController {
 
-    var photos : [Photos] = []
-    
+    @IBOutlet weak var ImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var photo : Photos? = nil 
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,40 +25,25 @@ class PhotoTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    func getPhotos() {
-        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
-            if let coreDataPhotos = try? context.fetch(Photos.fetchRequest()) as? [Photos] {
-                photos = coreDataPhotos
-                    tableView.reloadData()
-            }
-        }
-    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: <#T##String#>, sender: phots[indexPath.row])
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return photos.count
+        return 0
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        getPhotos()
-    }
-
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        let cellPhoto = photos[indexPath.row]
-        cell.textLabel?.text = cellPhoto.caption
-        
-        if let cellPhotoImageData = cellPhoto.imageData {
-            if let cellPhotoImage = UIImage(data: cellPhotoImageData) {
-                cell.imageView?.image = cellPhotoImage
-            }
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
-
+    */
 
     /*
     // Override to support conditional editing of the table view.

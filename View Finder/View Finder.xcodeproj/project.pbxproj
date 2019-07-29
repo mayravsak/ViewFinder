@@ -16,6 +16,7 @@
 		180BD1DC22EF496300EB51F5 /* View_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BD1DB22EF496300EB51F5 /* View_FinderUITests.swift */; };
 		1887387122EF67FF00C8B67F /* NewPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887387022EF67FF00C8B67F /* NewPhotoViewController.swift */; };
 		1887387322EF71AF00C8B67F /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887387222EF71AF00C8B67F /* PhotoTableViewController.swift */; };
+		1887387522EF8D6700C8B67F /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887387422EF8D6700C8B67F /* PhotoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		180BD1DD22EF496300EB51F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1887387022EF67FF00C8B67F /* NewPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPhotoViewController.swift; sourceTree = "<group>"; };
 		1887387222EF71AF00C8B67F /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
+		1887387422EF8D6700C8B67F /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		180BD1AC22EF496100EB51F5 = {
 			isa = PBXGroup;
 			children = (
+				1887387422EF8D6700C8B67F /* PhotoDetailViewController.swift */,
 				180BD1B722EF496100EB51F5 /* View Finder */,
 				180BD1CF22EF496300EB51F5 /* View FinderTests */,
 				180BD1DA22EF496300EB51F5 /* View FinderUITests */,
@@ -265,6 +268,7 @@
 				180BD1B922EF496100EB51F5 /* AppDelegate.swift in Sources */,
 				1887387122EF67FF00C8B67F /* NewPhotoViewController.swift in Sources */,
 				1887387322EF71AF00C8B67F /* PhotoTableViewController.swift in Sources */,
+				1887387522EF8D6700C8B67F /* PhotoDetailViewController.swift in Sources */,
 				180BD1C122EF496100EB51F5 /* View_Finder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
