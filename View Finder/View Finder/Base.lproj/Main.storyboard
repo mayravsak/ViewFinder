@@ -13,13 +13,13 @@
         <!--ViewFinder-->
         <scene sceneID="G6Y-LM-iTE">
             <objects>
-                <tableViewController id="C37-w2-pUh" sceneMemberID="viewController">
+                <tableViewController id="C37-w2-pUh" customClass="PhotoTableViewController" customModule="View_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RNk-bT-BPF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kK4-nQ-zh6">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="kK4-nQ-zh6">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kK4-nQ-zh6" id="rOh-Z7-GFL">
@@ -68,6 +68,9 @@
                                 <rect key="frame" x="170" y="477" width="74" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="9wM-iO-zyf" eventType="touchUpInside" id="JQe-4J-zll"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zol-VJ-S92">
                                 <rect key="frame" x="158" y="432" width="98" height="30"/>
@@ -107,6 +110,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="dSi-zA-pHG"/>
                     <connections>
+                        <outlet property="TextBoxTapped" destination="zol-VJ-S92" id="01W-8R-uKD"/>
                         <outlet property="newImage" destination="v9t-h8-248" id="vEh-Nl-MPo"/>
                     </connections>
                 </viewController>
