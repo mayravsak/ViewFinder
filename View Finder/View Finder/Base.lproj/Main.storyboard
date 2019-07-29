@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" title="ViewFinder" id="xTV-2J-Xqu">
                         <barButtonItem key="rightBarButtonItem" title="+" id="Zou-ny-DSQ">
                             <connections>
-                                <segue destination="9wM-iO-zyf" kind="show" id="z6v-sl-tnm"/>
+                                <segue destination="9wM-iO-zyf" kind="show" id="kvx-FD-3e2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -48,7 +48,7 @@
         <!--Add New Photo-->
         <scene sceneID="X7t-OG-qFA">
             <objects>
-                <viewController id="9wM-iO-zyf" sceneMemberID="viewController">
+                <viewController id="9wM-iO-zyf" customClass="NewPhotoViewController" customModule="View_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jyd-zw-Ew6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,6 +56,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rV5-SQ-7do">
                                 <rect key="frame" x="72" y="561" width="89" height="30"/>
                                 <state key="normal" title="Take a Photo"/>
+                                <connections>
+                                    <action selector="takeNewPhotoTapped:" destination="9wM-iO-zyf" eventType="touchUpInside" id="b9b-uM-fqd"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_4350" translatesAutoresizingMaskIntoConstraints="NO" id="v9t-h8-248">
                                 <rect key="frame" x="72" y="218" width="270" height="184"/>
@@ -75,6 +78,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIF-NI-baz">
                                 <rect key="frame" x="233" y="561" width="109" height="30"/>
                                 <state key="normal" title="Choose a photo"/>
+                                <connections>
+                                    <action selector="chooseNewPhotoTapped:" destination="9wM-iO-zyf" eventType="touchUpInside" id="mag-a4-QuG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,6 +106,9 @@
                         <viewLayoutGuide key="safeArea" id="WpK-5f-0gS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="dSi-zA-pHG"/>
+                    <connections>
+                        <outlet property="newImage" destination="v9t-h8-248" id="vEh-Nl-MPo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBy-hX-Dm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
