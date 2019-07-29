@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180BD1B922EF496100EB51F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BD1B822EF496100EB51F5 /* AppDelegate.swift */; };
+		180BD1BB22EF496100EB51F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BD1BA22EF496100EB51F5 /* ViewController.swift */; };
+		180BD1BE22EF496100EB51F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180BD1BC22EF496100EB51F5 /* Main.storyboard */; };
+		180BD1C122EF496100EB51F5 /* View_Finder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 180BD1BF22EF496100EB51F5 /* View_Finder.xcdatamodeld */; };
+		180BD1C322EF496300EB51F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180BD1C222EF496300EB51F5 /* Assets.xcassets */; };
+		180BD1C622EF496300EB51F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180BD1C422EF496300EB51F5 /* LaunchScreen.storyboard */; };
+		180BD1D122EF496300EB51F5 /* View_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BD1D022EF496300EB51F5 /* View_FinderTests.swift */; };
+		180BD1DC22EF496300EB51F5 /* View_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BD1DB22EF496300EB51F5 /* View_FinderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		180BD1CD22EF496300EB51F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180BD1AD22EF496100EB51F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180BD1B422EF496100EB51F5;
+			remoteInfo = "View Finder";
+		};
+		180BD1D822EF496300EB51F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180BD1AD22EF496100EB51F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180BD1B422EF496100EB51F5;
+			remoteInfo = "View Finder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180BD1B522EF496100EB51F5 /* View Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "View Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180BD1B822EF496100EB51F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		180BD1BA22EF496100EB51F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		180BD1BD22EF496100EB51F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		180BD1C022EF496100EB51F5 /* View_Finder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = View_Finder.xcdatamodel; sourceTree = "<group>"; };
+		180BD1C222EF496300EB51F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180BD1C522EF496300EB51F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		180BD1C722EF496300EB51F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180BD1CC22EF496300EB51F5 /* View FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "View FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180BD1D022EF496300EB51F5 /* View_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_FinderTests.swift; sourceTree = "<group>"; };
+		180BD1D222EF496300EB51F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180BD1D722EF496300EB51F5 /* View FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "View FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180BD1DB22EF496300EB51F5 /* View_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_FinderUITests.swift; sourceTree = "<group>"; };
+		180BD1DD22EF496300EB51F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180BD1B222EF496100EB51F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BD1C922EF496300EB51F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BD1D422EF496300EB51F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180BD1AC22EF496100EB51F5 = {
+			isa = PBXGroup;
+			children = (
+				180BD1B722EF496100EB51F5 /* View Finder */,
+				180BD1CF22EF496300EB51F5 /* View FinderTests */,
+				180BD1DA22EF496300EB51F5 /* View FinderUITests */,
+				180BD1B622EF496100EB51F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		180BD1B622EF496100EB51F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180BD1B522EF496100EB51F5 /* View Finder.app */,
+				180BD1CC22EF496300EB51F5 /* View FinderTests.xctest */,
+				180BD1D722EF496300EB51F5 /* View FinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180BD1B722EF496100EB51F5 /* View Finder */ = {
+			isa = PBXGroup;
+			children = (
+				180BD1B822EF496100EB51F5 /* AppDelegate.swift */,
+				180BD1BA22EF496100EB51F5 /* ViewController.swift */,
+				180BD1BC22EF496100EB51F5 /* Main.storyboard */,
+				180BD1C222EF496300EB51F5 /* Assets.xcassets */,
+				180BD1C422EF496300EB51F5 /* LaunchScreen.storyboard */,
+				180BD1C722EF496300EB51F5 /* Info.plist */,
+				180BD1BF22EF496100EB51F5 /* View_Finder.xcdatamodeld */,
+			);
+			path = "View Finder";
+			sourceTree = "<group>";
+		};
+		180BD1CF22EF496300EB51F5 /* View FinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				180BD1D022EF496300EB51F5 /* View_FinderTests.swift */,
+				180BD1D222EF496300EB51F5 /* Info.plist */,
+			);
+			path = "View FinderTests";
+			sourceTree = "<group>";
+		};
+		180BD1DA22EF496300EB51F5 /* View FinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				180BD1DB22EF496300EB51F5 /* View_FinderUITests.swift */,
+				180BD1DD22EF496300EB51F5 /* Info.plist */,
+			);
+			path = "View FinderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		180BD1B422EF496100EB51F5 /* View Finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180BD1E022EF496300EB51F5 /* Build configuration list for PBXNativeTarget "View Finder" */;
+			buildPhases = (
+				180BD1B122EF496100EB51F5 /* Sources */,
+				180BD1B222EF496100EB51F5 /* Frameworks */,
+				180BD1B322EF496100EB51F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "View Finder";
+			productName = "View Finder";
+			productReference = 180BD1B522EF496100EB51F5 /* View Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		180BD1CB22EF496300EB51F5 /* View FinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180BD1E322EF496300EB51F5 /* Build configuration list for PBXNativeTarget "View FinderTests" */;
+			buildPhases = (
+				180BD1C822EF496300EB51F5 /* Sources */,
+				180BD1C922EF496300EB51F5 /* Frameworks */,
+				180BD1CA22EF496300EB51F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180BD1CE22EF496300EB51F5 /* PBXTargetDependency */,
+			);
+			name = "View FinderTests";
+			productName = "View FinderTests";
+			productReference = 180BD1CC22EF496300EB51F5 /* View FinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		180BD1D622EF496300EB51F5 /* View FinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180BD1E622EF496300EB51F5 /* Build configuration list for PBXNativeTarget "View FinderUITests" */;
+			buildPhases = (
+				180BD1D322EF496300EB51F5 /* Sources */,
+				180BD1D422EF496300EB51F5 /* Frameworks */,
+				180BD1D522EF496300EB51F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180BD1D922EF496300EB51F5 /* PBXTargetDependency */,
+			);
+			name = "View FinderUITests";
+			productName = "View FinderUITests";
+			productReference = 180BD1D722EF496300EB51F5 /* View FinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180BD1AD22EF496100EB51F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					180BD1B422EF496100EB51F5 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					180BD1CB22EF496300EB51F5 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 180BD1B422EF496100EB51F5;
+					};
+					180BD1D622EF496300EB51F5 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 180BD1B422EF496100EB51F5;
+					};
+				};
+			};
+			buildConfigurationList = 180BD1B022EF496100EB51F5 /* Build configuration list for PBXProject "View Finder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 180BD1AC22EF496100EB51F5;
+			productRefGroup = 180BD1B622EF496100EB51F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				180BD1B422EF496100EB51F5 /* View Finder */,
+				180BD1CB22EF496300EB51F5 /* View FinderTests */,
+				180BD1D622EF496300EB51F5 /* View FinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180BD1B322EF496100EB51F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180BD1C622EF496300EB51F5 /* LaunchScreen.storyboard in Resources */,
+				180BD1C322EF496300EB51F5 /* Assets.xcassets in Resources */,
+				180BD1BE22EF496100EB51F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BD1CA22EF496300EB51F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BD1D522EF496300EB51F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180BD1B122EF496100EB51F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180BD1BB22EF496100EB51F5 /* ViewController.swift in Sources */,
+				180BD1B922EF496100EB51F5 /* AppDelegate.swift in Sources */,
+				180BD1C122EF496100EB51F5 /* View_Finder.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BD1C822EF496300EB51F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180BD1D122EF496300EB51F5 /* View_FinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BD1D322EF496300EB51F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180BD1DC22EF496300EB51F5 /* View_FinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		180BD1CE22EF496300EB51F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180BD1B422EF496100EB51F5 /* View Finder */;
+			targetProxy = 180BD1CD22EF496300EB51F5 /* PBXContainerItemProxy */;
+		};
+		180BD1D922EF496300EB51F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180BD1B422EF496100EB51F5 /* View Finder */;
+			targetProxy = 180BD1D822EF496300EB51F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		180BD1BC22EF496100EB51F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180BD1BD22EF496100EB51F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		180BD1C422EF496300EB51F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180BD1C522EF496300EB51F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		180BD1DE22EF496300EB51F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		180BD1DF22EF496300EB51F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		180BD1E122EF496300EB51F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "View Finder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Day-6.View-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		180BD1E222EF496300EB51F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "View Finder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Day-6.View-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		180BD1E422EF496300EB51F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "View FinderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Day-6.View-FinderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/View Finder.app/View Finder";
+			};
+			name = Debug;
+		};
+		180BD1E522EF496300EB51F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "View FinderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Day-6.View-FinderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/View Finder.app/View Finder";
+			};
+			name = Release;
+		};
+		180BD1E722EF496300EB51F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "View FinderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Day-6.View-FinderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "View Finder";
+			};
+			name = Debug;
+		};
+		180BD1E822EF496300EB51F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "View FinderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Day-6.View-FinderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "View Finder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		180BD1B022EF496100EB51F5 /* Build configuration list for PBXProject "View Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180BD1DE22EF496300EB51F5 /* Debug */,
+				180BD1DF22EF496300EB51F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180BD1E022EF496300EB51F5 /* Build configuration list for PBXNativeTarget "View Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180BD1E122EF496300EB51F5 /* Debug */,
+				180BD1E222EF496300EB51F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180BD1E322EF496300EB51F5 /* Build configuration list for PBXNativeTarget "View FinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180BD1E422EF496300EB51F5 /* Debug */,
+				180BD1E522EF496300EB51F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180BD1E622EF496300EB51F5 /* Build configuration list for PBXNativeTarget "View FinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180BD1E722EF496300EB51F5 /* Debug */,
+				180BD1E822EF496300EB51F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		180BD1BF22EF496100EB51F5 /* View_Finder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				180BD1C022EF496100EB51F5 /* View_Finder.xcdatamodel */,
+			);
+			currentVersion = 180BD1C022EF496100EB51F5 /* View_Finder.xcdatamodel */;
+			path = View_Finder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 180BD1AD22EF496100EB51F5 /* Project object */;
+}
