@@ -41,7 +41,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="SWL-pn-4Sg" kind="show" id="1oC-4v-W6d"/>
+                        <segue destination="SWL-pn-4Sg" kind="show" identifier="detailSegue" id="1oC-4v-W6d"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iE3-GY-HZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -129,13 +129,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5L-tX-hcM">
-                                <rect key="frame" x="20" y="227" width="374" height="250"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g5L-tX-hcM">
+                                <rect key="frame" x="20" y="228" width="374" height="249"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bZI-W9-A3F" firstAttribute="trailing" secondItem="g5L-tX-hcM" secondAttribute="trailing" constant="20" id="eMI-eA-bwV"/>
+                            <constraint firstItem="bZI-W9-A3F" firstAttribute="bottom" secondItem="g5L-tX-hcM" secondAttribute="bottom" constant="385" id="nWs-12-7dZ"/>
                             <constraint firstItem="g5L-tX-hcM" firstAttribute="leading" secondItem="bZI-W9-A3F" secondAttribute="leading" constant="20" id="ymF-l9-OKy"/>
                             <constraint firstItem="g5L-tX-hcM" firstAttribute="top" secondItem="bZI-W9-A3F" secondAttribute="top" constant="140" id="ymT-yF-3sl"/>
                         </constraints>

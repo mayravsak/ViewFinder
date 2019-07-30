@@ -83,7 +83,6 @@
 		180BD1AC22EF496100EB51F5 = {
 			isa = PBXGroup;
 			children = (
-				1887387422EF8D6700C8B67F /* PhotoDetailViewController.swift */,
 				180BD1B722EF496100EB51F5 /* View Finder */,
 				180BD1CF22EF496300EB51F5 /* View FinderTests */,
 				180BD1DA22EF496300EB51F5 /* View FinderUITests */,
@@ -105,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				180BD1B822EF496100EB51F5 /* AppDelegate.swift */,
+				1887387422EF8D6700C8B67F /* PhotoDetailViewController.swift */,
 				180BD1BC22EF496100EB51F5 /* Main.storyboard */,
 				1887387222EF71AF00C8B67F /* PhotoTableViewController.swift */,
 				1887387022EF67FF00C8B67F /* NewPhotoViewController.swift */,

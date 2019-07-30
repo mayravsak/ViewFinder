@@ -11,10 +11,12 @@ import UIKit
 class PhotoTableViewController: UITableViewController {
 
     var photos : [Photos] = []
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -32,8 +34,18 @@ class PhotoTableViewController: UITableViewController {
             }
         }
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: <#T##String#>, sender: phots[indexPath.row])
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailSegue", sender: photos[indexPath.row])
+    }
+    //in the tutorial from KWK, their moveToDetail= our detailSegue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue" {
+            if let photoDetailView = segue.destination as? PhotoDetailViewController {
+                if let photoToSend = sender as? Photos {
+                    photoDetailView.photo = photoToSend
+                }
+            }
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
