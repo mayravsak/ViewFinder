@@ -54,7 +54,7 @@ class NewPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
             newImage.image = selectedImage
             
             print(selectedImage)
-        }
+        } 
         //this is to dismiss the screen so we can go back to the main screen
         imagePicker.dismiss(animated: true, completion: nil)
     }
